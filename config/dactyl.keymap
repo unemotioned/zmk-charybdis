@@ -199,10 +199,10 @@
 
         layer_7 {
             bindings = <
-&trans     &none  &none  &none          &none          &none     &none       &none            &none         &none         &none         &none
-&my_email  &none  &none  &none          &none          &none     &bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&to 0      &none  &none  &kp LC(PG_UP)  &kp LC(PG_DN)  &none     &none       &none            &none         &none         &none         &none
-&none      &none  &none  &none          &none          &none     &none       &kp PRINTSCREEN  &none         &none         &none         &none
+&trans     &none  &none  &none          &none          &none     &none       &none         &none         &none         &none         &none
+&my_email  &none  &none  &none          &none          &none     &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&to 0      &none  &none  &kp LC(PG_UP)  &kp LC(PG_DN)  &none     &none       &none         &none         &none         &none         &none
+&none      &none  &none  &none          &none          &none     &none       &kp PSCRN     &none         &none         &none         &none
                          &trans         &trans         &trans    &trans      &trans
                                         &none          &none     &none
             >;
