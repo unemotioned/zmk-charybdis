@@ -181,6 +181,7 @@ west build \
     -- \
     -DSHIELD="charybdis_left" \
     -DZMK_CONFIG="$PWD/config" \
+    -DBOARD_ROOT="$PWD" \
     -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 ```
 
@@ -195,6 +196,7 @@ west build \
     -- \
     -DSHIELD="charybdis_right" \
     -DZMK_CONFIG="$PWD/config" \
+    -DBOARD_ROOT="$PWD" \
     -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 ```
 
@@ -209,6 +211,7 @@ west build \
     -- \
     -DSHIELD="settings_reset" \
     -DZMK_CONFIG="$PWD/config" \
+    -DBOARD_ROOT="$PWD" \
     -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 ```
 

@@ -40,6 +40,7 @@ build_target() {
         -- \
         -DSHIELD="$shield" \
         -DZMK_CONFIG="$ROOT_DIR/config" \
+        -DBOARD_ROOT="$ROOT_DIR" \
         -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 }
 
