@@ -2,6 +2,7 @@
 set -euo pipefail
 
 build_reset=false
+build_clean=false
 
 # NOTE: Change the keyboard names, controller type and etc from here.
 shield_left='charybdis_left'
@@ -31,10 +32,14 @@ build_target() {
     local shield="$2"
     local board="$3"
 
-    # NOTE: Add the following option in "$ west build" before the "--" to build cleanly
-    # -p always \
+    local clean_opt=()
+    if [ "$build_clean" = true ]; then
+        clean_opt=(-p always)
+    fi
+
     west build \
         -d "$build_dir" \
+        "${clean_opt[@]}" \
         -b "$board" \
         -s zmk/app \
         -- \
