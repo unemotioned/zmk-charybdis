@@ -25,6 +25,13 @@
     combos {
         compatible = "zmk,combos";
 
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <13 15>;
+            timeout-ms = <40>;
+            layers = <0>;
+        };
+
         mac_cut {
             bindings = <&kp LG(X)>;
             key-positions = <38 40>;
